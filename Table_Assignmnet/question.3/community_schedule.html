@@ -1,0 +1,133 @@
+<!--3.
+Scenario:
+You are tasked with creating a web page for a community center that hosts weekly activities. The community center wants to display a schedule table for their visitors. Some activities span multiple time slots, and you need to use the rowspan attribute to represent this visually in the table.
+
+Instructions:
+File Setup:
+Create a new HTML file and name it community_schedule.html.
+
+Create a Schedule Table:
+Use only basic HTML to create a table representing the activity schedule. Do not use any CSS.
+
+Table Structure Requirements:
+
+The table must have 7 rows for each day of the week (Monday to Sunday).
+It should have 4 columns:
+Day
+Time
+Activity
+Location
+Use the rowspan attribute where an activity spans multiple time slots.
+Activity Details: Use the following schedule (or create your own):
+
+Day           Time             Activity   Location
+Monday 8:00 AM - 9:00 AM Yoga         Room A
+9:00 AM - 11:00 AM Painting Workshop Room B
+Tuesday 10:00 AM - 12:00 PM Cooking Class (2 hrs) Kitchen
+Wednesday 8:00 AM - 9:00 AM Meditation Room C
+Thursday 1:00 PM - 3:00 PM Dance Class (2 hrs) Studio
+        9:00 AM - 12:00 PM Photography Basics Room D
+Note: Ensure that the rowspan attribute is used for activities spanning multiple time slots.
+
+Additional Requirements:
+
+Add a meaningful <caption> for the table.
+Use <thead> for the table headers (Day, Time, Activity, Location).
+Use <tfoot> to add a note, e.g., "Schedule is subject to change."
+File Submission:
+
+Save your file with the name community_schedule.html.
+Ensure the HTML is properly indented and includes comments explaining how rowspan is applied.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <table border="10">
+                <caption>Weekly Community Center Activity Schedule</caption>
+                <thead>
+                        <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Activity</th>
+                                <th>Location</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                                <td>Monday</td>
+                                <td>8:00 AM - 9:00 AM  </td>
+                                <td>Yoga</td>
+                                <td>Room A</td>
+                        </tr>
+                        <!-- rowspan="2" combines the two Tuesday time slots -->
+                        <tr>
+                                <td>Tuesday</td>
+                                <td> 10:00 AM - 11:00 AM  </td>
+                                <td rowspan="2">Cooking Class (2 hrs)</td>
+                                <td rowspan="2">Kitchen</td>
+                        </tr>
+                        <tr> 
+                                <td>Tuesday</td>
+                                 <td>11:00 AM - 12:00 PM</td>
+                         </tr>
+
+                        <tr> 
+                                <td>Wednesday</td> 
+                                <td>8:00 AM - 9:00 AM</td>
+                                <td>Meditation</td> 
+                                <td>Room C</td> 
+                        </tr>
+                        <!-- rowspan="2" combines the two Thursday time slots --> 
+                        <tr>
+                                 <td>Thursday</td>
+                                 <td>1:00 PM - 2:00 PM</td>
+                                 <td rowspan="2">Dance Class</td>
+                                 <td rowspan="2">Studio</td> 
+                        </tr>
+                        <tr> 
+                                <td>Thursday</td> 
+                                <td>2:00 PM - 3:00 PM</td> 
+                        </tr> 
+                        <!-- rowspan="3" combines three Friday time slots --> 
+                        <tr> 
+                                <td>Friday</td> 
+                                <td>9:00 AM - 10:00 AM</td> 
+                                <td rowspan="3">Photography Basics</td> 
+                                <td rowspan="3">Room D</td> 
+                        </tr>
+                        <tr> 
+                                <td>Friday</td> 
+                                <td>10:00 AM - 11:00 AM</td> 
+                        </tr> 
+                        <tr> 
+                                <td>Friday</td> 
+                                <td>11:00 AM - 12:00 PM</td> 
+                        </tr> 
+                        <tr> 
+                                <td>Saturday</td> 
+                                <td>10:00 AM - 11:00 AM</td> 
+                                <td>Art Club</td> 
+                                <td>Room E</td> 
+                        </tr>
+                        <tr> 
+                                <td>Sunday</td> 
+                                <td>9:00 AM - 10:00 AM</td> 
+                                <td>Community Meeting</td> 
+                                <td>Hall</td> 
+                        </tr>
+
+                </tbody>
+                <tfoot> 
+                        <tr> 
+                                <td colspan="4">Schedule is subject to change.</td> 
+                        </tr> 
+                </tfoot>
+        </table> 
+</body>
+</html>

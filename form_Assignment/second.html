@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form </title>
+</head>
+<body>
+<h1>Student Registration Form</h1>
+<h6>Please fill the form carefully...</h6>
+<fieldset>
+<legend>Personal Information</legend>
+<table>
+    <tr> 
+        <td>Full Name:</td> 
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td>
+        <td><input type="text" name="name" placeholder="Enter full name" </td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td>
+        <td><input type="email" name="email" placeholder="example@gmail.com"></td>
+    </tr>
+    <tr>
+         <td>password:</td>
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td>
+        <td><input type="password" name="password" ></td>       
+    </tr>
+    <tr>
+         <td>Date of Birth:</td>
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td>
+        <td><input type="date" name="date of birth" ></td>       
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td>
+        <td><input type="Radio" name="Gender" value="Male" id="male" >
+        <label for="Male">Male</label> 
+        <input type="Radio" name="Gender" value="Female" id="female" >
+        <label for="female">Female</label>
+        ><input type="Radio" name="Gender" value="Other" id="Other" >
+        <label for="Other">Other</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Phone Number:</td>
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td>
+        <td><input type="tel" name="phone Number" placeholder="+91 8871255678"></td>
+    </tr>
+    <tr>
+        <td>Profile Photo:</td>
+        <td></td>
+        <td><input type="file" name="Profile Photo:" ></td>
+    </tr>
+    <tr>
+        <td>AGE:</td>
+        <td></td>
+        <td><input type="number" min="18" max="30"> </td>
+    </tr>
+    <tr>
+        <td>Website</td>
+        <td></td>
+        <td><input type="url"> </td>
+    </tr>
+</table>
+</fieldset>
+
+
+<fieldset>
+<legend>Adress Details</legend>
+<table>
+    <tr> 
+        <td><label for="address">Address:</label></td>
+        <td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</td>
+        <td><textarea id="address" name="address" rows="5" cols="40"></textarea></td>
+    </tr>
+  
+    <tr>
+    <td><label for="country">Country:</label></td>
+
+    <td></td>
+    <td>
+        <select id="country" name="country">
+            <option value="">Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td><label for="state">State:</label></td>
+    <td></td>
+    <td>
+        <select id="state" name="state">
+            <option value="">Select State</option>
+            <option value="madhya_pradesh">Madhya Pradesh</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="rajasthan">Rajasthan</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td><label for="city">City:</label></td>
+    <td></td>
+    <td>
+        <select id="city" name="city">
+            <option value="">Select City</option>
+            <option value="indore">Indore</option>
+            <option value="bhopal">Bhopal</option>
+            <option value="jabalpur">Jabalpur</option>
+            <option value="gwalior">Gwalior</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td><label for="pincode">Pincode:</label></td>
+    <td></td>
+    <td>
+        <input type="text"
+               id="pincode"
+               name="pincode"
+               maxlength="6"
+               pattern="[0-9]{6}"
+               placeholder="Enter Pincode"
+               required>
+    </td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend>Course Selection</legend>
+<table>
+    <tr>
+        <td><label> select your preferred Course:</label> </td>
+        <td>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</td>
+        <td>
+        <input type="checkbox" id="html" name="course" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="course" value="CSS">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="java" name="course" value="Java">
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="python" name="course" value="Python">
+        <label for="python">Python</label>
+        </td>
+    </tr>
+    <tr>
+    <td>Select your favourite subject:</td>
+    <td></td>
+    <td>
+        <select name="subject">
+            <option value="">Select Subject</option>
+            <option value="Maths">Maths</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="Computer">Computer</option>
+        </select>
+    </td>
+    </tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend>Additional Information</legend>
+<table>
+    <tr>
+        <td>Preferred Time: </td>
+        <td>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</td>
+        <td><input type="time"> </td>
+    </tr>
+    <tr>
+        <td><label for="c1">choose color</label></td>
+        <td></td>
+        <td><input type="color" name="c1" id="c1">
+        </td>
+    </tr>
+    <tr>
+        <td>Range(Experience):</td>
+        <td></td>
+        <td><input type="range" name="experience" min="0" max="10"> </td>
+    </tr>
+    <tr>
+        <td>Upload Resume:</td>
+        <td></td>
+        <td><input type="file"> </td>
+    </tr>
+</table>
+</fieldset>
+
+<h3>Education Information</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>S.No.</th>
+            <th>Institute Name</th>
+            <th>Degree</th>
+            <th>Year</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+ <tbody>
+            <tr>
+                <td>1</td>
+                <td>ABC Institute</td>
+                <td>B.Tech</td>
+                <td>2023</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>XYZ School</td>
+                <td>12th</td>
+                <td>2019</td>
+                <td>90%</td>
+            </tr>
+        </tbody>   
+</table>  
+<h3>Hobbies</h3> 
+<ul>
+    <li>Reading</li>
+    <li>Coding</li>
+    <li>Playing games</li>
+    <li>Travelling</li>
+</ul> 
+<h3>Instruction</h3>
+<ol>
+    <li>Fill all the the field</li>
+    <li>Upload a recent photo</li>
+    <li>Submit the form</li>
+</ol>
+<h3><label for="progress">Progress:</label></h3>
+<input type="range" id="progress" min="0" max="100">
+
+<br><br>
+
+<h3><label for="skill">Skill Meter:</label></h3>
+<input type="range" id="skill" min="0" max="10">
+<br>
+<h3>Sample Image</h3>
+<img src="scream.jpg" alt="Beautiful Picture" width="350" height="200">
+</body>
+</html>

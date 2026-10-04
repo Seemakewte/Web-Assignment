@@ -1,0 +1,70 @@
+/* Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: lightgray;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Outer Card with Top Rounded Arch */
+.card-container {
+  background-color: orange;
+  width: 320px;
+  padding: 40px 20px 30px 20px;
+  /* Top arch shape */
+  border-top-left-radius: 160px;
+  border-top-right-radius: 160px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 8px 16px gray;
+}
+
+/* Individual Box Styling */
+.box {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 2px dashed white; /* Dashed border inside each box */
+}
+
+/* MCA - Red Box */
+.mca {
+  background-color: red;
+  color: white;
+}
+
+.mca-badge {
+  background-color: royalblue;
+  color: white;
+  padding: 2px 12px;
+  border-radius: 2px;
+}
+
+/* BCA - Yellow Box */
+.bca {
+  background-color: yellow;
+  color: black;
+}
+
+/* BBA - Green Box */
+.bba {
+  background-color: green;
+  color: yellow;
+}

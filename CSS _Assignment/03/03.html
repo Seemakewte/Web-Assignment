@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard</title>
+  
+  <style>
+    /* Reset Basics */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: white; /* Clean background */
+    }
+
+    /* Sidebar Styling */
+    .sidebar {
+      width: 250px;
+      background-color: black; /* Dark sidebar background */
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .nav-menu ul {
+      list-style: none;
+    }
+
+    .nav-menu li {
+      margin-bottom: 20px;
+    }
+
+    .nav-menu a {
+      color:lightgray;
+      text-decoration: none;
+      font-size: 16px;
+      display: block;
+      transition: color 0.2s ease;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: white;
+    }
+
+    /* Main Area Styling */
+    .main-content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      color: black;
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    /* Cards Layout (Side by Side) */
+    .cards-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 12px;
+      padding: 30px 20px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 {
+      font-size: 26px;
+      color: black;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Left Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">My Dashboard</h2>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Right Main Content -->
+  <main class="main-content">
+    <header class="header">
+      <h1>Welcome to the Dashboard</h1>
+    </header>
+
+    <!-- Cards Row -->
+    <section class="cards-grid">
+      <div class="card">
+        <h2>45005</h2>
+        <p>Total Order</p>
+      </div>
+
+      <div class="card">
+        <h2>4364</h2>
+        <p>Total Sale</p>
+      </div>
+
+      <div class="card">
+        <h2>454</h2>
+        <p>Total Customer</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

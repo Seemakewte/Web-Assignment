@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <style>
+    /* Reset & Base Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: lightgray;
+      padding: 50px 20px;
+    }
+
+    /* Navigation Bar Container */
+    .navbar {
+      background-color: black;
+      border-top: 3px solid orange;
+      border-bottom: 3px solid orange;
+      width: 100%;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    /* Individual Navigation Items */
+    .navbar li {
+      border-right: 1px solid gray;
+    }
+
+    .navbar li:last-child {
+      border-right: none; /* Aakhri item ke paas right border nahi hoga */
+    }
+
+    /* Navigation Links */
+    .navbar a {
+      display: block;
+      padding: 15px 25px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    /* Hover Effect */
+    .navbar a:hover {
+      background-color: dimgray;
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

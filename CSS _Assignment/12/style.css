@@ -1,0 +1,78 @@
+/* Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: darkgray;
+  padding: 20px;
+}
+
+/* Main Outer Wrapper */
+.layout-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+/* Header Section */
+.header {
+  background-color: orange;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+/* Content Area Wrapper (Flexbox for Sidebar + Main Area) */
+.content-wrapper {
+  display: flex;
+  min-height: 500px;
+}
+
+/* Left Vertical Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: black;
+  padding: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar li a {
+  display: block;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar li a:hover {
+  background-color: darkgreen;
+}
+
+/* Right Main Content Body */
+.main-body {
+  flex: 1;
+  background-color: lightgray;
+  padding: 20px;
+}
